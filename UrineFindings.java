@@ -31,7 +31,6 @@ public class UrineFindings extends urinetest {
             System.out.println("- Mild Bacterial Presence");
         }
 
-        // pH interpretation
         if (ph < 4.5) {
             System.out.println("- Very Acidic (Possible Metabolic Issue)");
         } else if (ph <= 6.0) {

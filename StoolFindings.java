@@ -65,7 +65,6 @@ public class StoolFindings extends Stooltest {
             System.out.println("- Invalid parasite input (use: none, few, moderate, many)");
         }
 
-        // NORMAL RESULT (FIXED)
         if (bloodN.contains("negative") &&
         mucusN.contains("negative") &&
         bacteriaN.contains("negative") &&
