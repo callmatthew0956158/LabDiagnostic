@@ -4,7 +4,7 @@ public class clinicmain {
 
         Scanner input = new Scanner(System.in);
 
-        //PATIENT INFO (MOVED FIRST)
+        //PATIENT INFO 
         System.out.print("Patient Name: ");
         String patientname = input.nextLine();
 
@@ -198,19 +198,19 @@ public class clinicmain {
         UrineFindings urine = new UrineFindings(
         color, clarity, glucose, protein, bacteria, ph
     );
-    urine.showUrineResults();
+        urine.showUrineResults();
 
-    double totalPayment = 380;
+        double totalPayment = 380;
 
-    System.out.println("\n===== BILLING =====");
-    System.out.println("Total Amount: Php " + totalPayment);
+        System.out.println("\n===== BILLING =====");
+        System.out.println("Total Amount: Php " + totalPayment);
 
-    System.out.print("Enter Cash: ");
-    double cash = input.nextDouble();
+        System.out.print("Enter Cash: ");
+        double cash = input.nextDouble();
 
-    double change = cash - totalPayment;
+        double change = cash - totalPayment;
 
-    System.out.println("Change: Php " + change);
+        System.out.println("Change: Php " + change);
 }
     else if (menu == 4) {
 
