@@ -212,6 +212,31 @@ public class clinicmain {
 
     System.out.println("Change: Php " + change);
 }
+    else if (menu == 4) {
+
+        System.out.println("\n===== PREGNANCY TEST =====");
+
+        System.out.print("hCG detected? (true/false): ");
+        boolean hcg = input.nextBoolean();
+
+        PregnancyResult preg = new PregnancyResult(hcg);
+
+    
+        preg.showResult();
+
+        double totalPayment = 250;
+
+        System.out.println("\n===== BILLING =====");
+        System.out.println("Total Amount: Php " + totalPayment);
+
+        System.out.print("Enter Cash: ");
+        double cash = input.nextDouble();
+
+        double change = cash - totalPayment;
+
+        System.out.println("Change: Php " + change);
+}
         input.close();
     }
+    
 }
